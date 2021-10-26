@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+html {
+    width: 100%;
+    letter-spacing: 2px;
+}
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url("https://www.wallpaperflare.com/static/905/635/699/pok%C3%A9mon-video-games-retro-games-pokemon-wallpaper.jpg");
+    background-size: cover;
+}
+h1, h2, h3 {
+    font-family: 'Pokemon Solid', sans-serif;
+    -webkit-text-fill-color: #ffcb05;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #3c5aa6;
+}
+h1 {
+    font-size: 40px;
+    margin-top: -1%;
+    margin-bottom: -5%;
+}
+button {
+    letter-spacing: 2px;
+    width: 100px;
+    font-family: 'Gloria Hallelujah', cursive;
+    cursor: pointer;
+}
+#poke-logo {
+    margin-top: 10px;
+    margin-left: 20px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 270px;
+    height: 100px;
+    cursor: pointer;
+    visibility: hidden;
+}
+#toggle-music {
+    top: 0;
+    left: 0;
+    position: absolute;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: 20%;
+    margin-top: 3%;
+    text-align: center;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #ffcb05;
+    background-color: red;
+    visibility: hidden;
+}
+#pokedex-page {
+    margin: 20px 0 0 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: red;
+    width: 70%;
+    height: 70%;
+    border-radius: 0 30px 45px 7px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: papayawhip;
+}
+#poke-info {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 32%;
+    margin-top: 6%;
+    background-color: papayawhip;
+}
+#id, #name {
+    width: 45%;
+    text-align: center;
+}
+#poke-figure {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 50%;
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2fb2821a-1406-4a1d-9b04-6668f278e944/d83htw0-ec490c3b-f7dd-4570-a698-8404a8a12f99.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzJmYjI4MjFhLTE0MDYtNGExZC05YjA0LTY2NjhmMjc4ZTk0NFwvZDgzaHR3MC1lYzQ5MGMzYi1mN2RkLTQ1NzAtYTY5OC04NDA0YThhMTJmOTkucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.zFeU6uxxutMPR_qMMoP5MOM8N4EqbYuZWc_naTh8Rpw);
+    background-size: cover;
+    border-radius: 0 20px 0 0;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    margin-top: 4%;
+    margin-right: 5%;
+}
+#poke-img {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    transform: translate(-50%, -50%);
+}
+#moves-list {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 45%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+#evo-div {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    width: 50%;
+    height: 30%;
+    margin-right: 5%;
+    margin-bottom: 4%;
+    background-color: darkslategray;
+    padding-top: 2%;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 0 0 10px 10px;
+}
+.evo-fig {
+    margin: 0 auto;
+    color: papayawhip;
+}
+.evo-img {
+    background-color: lightseagreen;
+    border-radius: 50%;
+    margin: 0;
+    cursor: pointer;
+}
+.evo-img:hover {
+    animation: shake 0.8s;
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+#nav {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.nav {
+    margin: 0 auto;
+}
